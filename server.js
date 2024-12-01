@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Πάρε το API Key από τις περιβαλλοντικές μεταβλητές
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_KEY = 
 
 app.post('/api/chat', async (req, res) => {
     const userMessage = req.body.message;
