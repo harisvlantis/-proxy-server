@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Ρύθμιση του CORS και Body Parser
-app.use(cors())({ origin: 'http://your-frontend-domain.com' }));
+app.use(cors({ origin: 'http://your-frontend-domain.com' }));
 app.use(bodyParser.json());
 
 // Πάρε το API Key από τις περιβαλλοντικές μεταβλητές
